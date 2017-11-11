@@ -1,0 +1,246 @@
+* {
+
+  box-sizing: border-box; 
+}
+html{
+	background:url("../img/wildtextures_wood.jpg") no-repeat center center /*fixed*/;
+}
+body{
+	color:#000000;
+	font-family: Roboto,sans-serif;
+	font-size:14px;
+	font-weight:300;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+
+}
+a{
+	text-decoration:none;
+	color:#000000;
+	border-radius:5px;
+	padding:5px;
+}
+li a:hover{
+	color:rgba(50,50,50,1);
+	background-color:#5d4b2a;
+
+}
+
+
+
+
+/*HEADERS*/
+header{
+	background-color:#4d3b1a;
+	height:150px;
+	width:100%;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+}
+header img{
+	height:150px;
+
+}
+header nav{
+	margin-right:150px;
+	font-size:26px;
+}
+header nav ul{
+	display:flex;
+	justify-content: space-between;
+	width:300px;
+}
+li{
+	
+	list-style-type: none;
+	padding:5px 10px 5px 10px;
+	font-weight: 500;
+}
+
+#transitionbartop{
+	background: linear-gradient(#4d3b1a 5px,black 10px,transparent 25px);
+	width:100%;
+	height:40px;
+	margin-bottom:50px;
+}
+
+/*MAIN BODY OF LANDING*/
+#click-thru{
+	font-size:50px;
+	color:rgba(200,200,200,1);
+	padding:200px;
+	background:radial-gradient(rgba(0,0,0,1),rgba(0,0,0,0));
+	border-radius: 50%;
+}
+#click-thru:hover{
+	background:radial-gradient(rgba(77, 59, 26, 1),rgba(77, 59, 26, 0));
+	color:rgba(244, 223, 81, 1);
+}
+/*MAIN BODY OF LOCKBOX*/
+.container{
+	margin:auto;
+	width:80%;
+	min-width: 700px; /* THIS ISN'T WORKING, IT KEEPS GETTING SMALLER*/
+	
+	display:grid;
+	width:620px;
+	grid-template-columns: 320px 320px;
+	grid-template-rows:200px 200px 200px;
+	grid-gap:20px 20px;
+	grid-template-areas: 
+		"com rid"
+		"swi for"
+		"pro tre"
+}
+.module{ 
+	border-style:solid;
+	border-color:#222222;
+	border-radius:5px;
+	height:200px;
+	width:320px;
+	background: linear-gradient(to bottom right,#666666,#383838);
+}
+.module h2{	/*CENTERS TITLES ON MODULES*/
+	text-align:center;
+}
+#combo{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+#combo div{ 
+	display:inline-flex;
+}
+.tumbler{
+	display:flex;
+	flex-direction: column;
+	width:29px;
+	height:100px;
+	background:darkgrey;
+	border-radius:14.5px;
+	margin-right:20px;
+	margin-left:20px;
+}
+.tumbler div{
+	height:29px;
+	width:29px;
+	border-radius:50%;
+}
+/*.tumbler:first-child{
+	margin-bottom:5px;
+}*/
+.tumbler p{
+	margin-top:13px;
+	margin-bottom:13px;
+	height:23px;
+	width:23px;
+	text-align: center;
+	background-color: white;
+	line-height: 20px;
+	border-radius: 4px;
+	margin-left:3px;
+}
+.up-tick{
+	background:radial-gradient(rgba(255,0,0,1),rgba(100,0,0,1) 20px);
+}
+.up-tick:hover{
+	cursor:pointer;
+}
+
+.down-tick{
+	background:radial-gradient(rgba(150,150,150,1),rgba(0,0,0,1) 20px);
+}
+.down-tick:hover{
+	cursor:pointer;
+}
+#riddle{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+#riddle p{
+	margin-bottom:40px;
+	width:170px;
+	text-align:center;
+	font-size:18px;
+}
+#progress-lights{
+	display:flex;
+	width:auto;
+	justify-content:space-around;
+	margin-left:20px;
+	margin-right:20px;
+}
+#progress-lights div{
+	width:70px;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+#progress-lights div h3{
+	font-size: 10px;
+	text-align:center;
+}
+
+#progress-lights div div{
+	height:50px;
+	width:50px;
+	background-color:#8B0000;/* Dark Red*/
+	border-style:solid;
+	border-color:#FF0000; /*Red*/
+	border-radius: 50%;
+	border-width:5px;
+}
+#open-box {		/*THIS DOES NOT WORK*/
+	background-color:#00008B; /*Dark Blue*/
+	border-color:#0000FF;
+}
+#open-box:hover{	
+	cursor:pointer;
+}
+
+
+
+
+#combo{
+	grid-area:com;
+}
+#riddle{
+	grid-area:rid;
+}
+#switch{
+	grid-area:swi;
+}
+#fourth{
+	grid-area:for;
+}
+#progress{
+	grid-area:pro;
+}
+#treasure{
+	grid-area:tre;
+}
+/*FOOTERs*/
+footer{
+	margin-top:50px;
+	width:100%;
+}
+
+footer div:nth-child(1){
+	background: linear-gradient(black 5px,#4d3b1a 15px);
+	width:100%;
+	height:20px;
+}
+footer div:nth-child(2){
+	background-color:#4d3b1a;
+	height:30px;
+	width:100%;
+	display:flex;
+	align-items: center;
+}
+footer div p{
+	margin:auto;
+
+}

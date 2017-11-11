@@ -1,0 +1,109 @@
+<head>
+	<meta charset="utf-8">
+	<title>The Lockbox</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,500,700,900,900" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body id="lockbox-page">
+	<header>
+		<img src="img/logo.png"><!-- ::LOGO -->
+<!-- 		<h1>Lockbox</h1> -->
+		<nav><!-- ::NAVIGATION:: -->
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="lockbox.html">Puzzle</a></li>
+				<li><a href="form.html">Feedback</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div id=transitionbartop></div>
+
+	<section class="container">
+
+		<div class="module" id="combo">
+			<h2>Combination Lock</h2>
+			<div>
+				<div class="tumbler">
+					<div class="up-tick"></div>
+					<p>0</p>
+					<div class="down-tick"></div>
+				</div>
+				<div class="tumbler">
+					<div class="up-tick"></div>
+					<p>0</p>
+					<div class="down-tick"></div>
+				</div>
+				<div class="tumbler">
+					<div class="up-tick"></div>
+					<p>0</p>
+					<div class="down-tick"></div>
+				</div>
+			</div>
+			<p>Only Primes Allowed</p>
+		</div>
+<!-- _____________________________________________________ -->
+
+		<div class="module" id="riddle">
+			<h2>Riddle</h2>
+			<p>What has a head and a tail but no body?</p>
+			<form>
+				<input type="text" placeholder="Your Answer...">
+				<input type="submit" name="submit-riddle" value="Guess!" id="guess-riddle">
+			</form>
+		</div>
+<!-- _____________________________________________________ -->
+
+		<div class="module" id="switch">
+			<h2>Switch</h2>
+			<img src="#">
+			<img src="#">
+		</div>
+<!-- _____________________________________________________ -->
+
+		<div class="module" id="fourth">
+			
+
+		</div>
+<!-- _____________________________________________________ -->
+
+		<div class="module" id="progress">
+			<h2>Progress</h2>
+			<div id="progress-lights">
+				<div>
+					<h3>Combo</h3>
+					<div></div>
+				</div>
+				<div>
+					<h3>Riddle</h3>
+					<div></div>
+				</div>
+				<div>
+					<h3>Switch</h3>
+					<div></div>
+				</div>
+				<div>
+					<h3>Open</h3>
+					<div id="open-box"></div>
+				</div>
+			</div>
+		</div>
+<!-- _____________________________________________________ -->
+
+		<div class="module" id=treasure>
+			<h2>The Treasure</h2>
+		</div>
+
+	</section>
+
+
+
+<footer>
+	<div></div>
+	<div><p>© Lockbox 2017</p></div>
+</footer>
+</body>

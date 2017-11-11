@@ -1,0 +1,15 @@
+
+
+To Do
+-------------
+Write the form page
+Write the javascript
+
+
+Minor Issues
+--------------
+section.container has a weird size issue on the right
+
+resize background image to look better
+
+
